@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Parallax container styles */
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* First parallax image - Mountain sunrise */
+.parallax-1 {
+    background-image: url(../../cell01/ex02/Picture1.png);
+    background-blend-mode: overlay;
+}
+
+/* Second parallax image - Ocean sunset */
+.parallax-2 {
+    background-image: url(../../cell01/ex02/among-us-twerk.gif);
+    background-blend-mode: overlay;
+}
+
+/* Black content block */
+.content-block {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-block h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+    animation: fadeIn 2s ease-out;
+}
+
+.content-block p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd;
+    animation: fadeIn 2.5s ease-out;
+    background-image: url();
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    
+    .caption h1 {
+        font-size: 32px;
+    }
+    
+    .caption p {
+        font-size: 16px;
+    }
+    
+    .caption {
+        padding: 30px 40px;
+    }
+    
+    .content-block h2 {
+        font-size: 28px;
+    }
+    
+    .content-block p {
+        font-size: 16px;
+    }
+}

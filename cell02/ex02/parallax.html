@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Experience</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* Common style for full-screen sections */
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Creates a parallax effect */
+        }
+        .midsection {
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Creates a parallax effect */
+        }
+
+        /* First Section with Image */
+        .hero {
+            background-image: url('https://i.ytimg.com/vi/cVKUytTqwUk/maxresdefault.jpg');
+        }
+
+        /* Middle Black Section */
+        .content-block {
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        /* Final Section with Image */
+        .footer-image {
+            background-image: url('https://i.redd.it/bvc1hd6nznif1.jpeg');
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section hero">
+    </div>
+
+    <div class="midsection content-block">
+            <h2>Prestigious</h2>
+    </div>
+
+    <div class="section footer-image">
+    </div>
+
+</body>
+</html>
