@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <div class="container-flex">
+        <button id="myButton" style="margin-left: auto;margin-right: auto;">Click me!</button>
+    </div>
+</body>
+<script>
+    function getInt(min, max) {
+    // Use Math.ceil() on min and Math.floor() on max to ensure they are treated as integers
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    // The expression generates a number in the range [min, max]
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    // 1. Select the button and the target element (the body in this case)
+    const colorButton = document.getElementById("myButton");
+    const bodyElement = document.body;
+
+    // 2. Define a function to change the color
+    function changeBackgroundColor() {
+        bodyElement.style.backgroundColor = `rgb(${getInt(0,255)},${getInt(0,255)},${getInt(0,255)})`; // Set the desired color
+    }
+
+    // 3. Attach a click event listener to the button
+    colorButton.addEventListener("click", changeBackgroundColor);
+</script>
+</html>
